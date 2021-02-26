@@ -1,0 +1,325 @@
+@import "variables";
+@import"./mixins";
+@import "keyframes";
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Tipico', sans-serif;
+}
+
+main.wrapper {
+    z-index: 1;
+    height: 100vh;
+    width: 100vw;
+    background-color: $MainBG;
+    position: relative;
+    overflow: hidden;
+    .particle {
+        background-image: url(../img/particle.png);
+        background-size: contain;
+        width: 146px;
+        height: 168px;
+        margin-left: -2px;
+        opacity: 0;
+        animation: fadeIn 2s cubic-bezier(.42,0,.58,1) 21s,fadeOut2 2s cubic-bezier(.42,0,.58,1) 23.6s;
+        animation-fill-mode: forwards;
+    }
+    .p1 {
+        animation: fadeIn 2s cubic-bezier(.42,0,.58,1) 21.2s,fadeOut2 2s cubic-bezier(.42,0,.58,1) 23.8s;
+        animation-fill-mode: forwards;
+    }
+    .p2 {
+        animation: fadeIn 2s cubic-bezier(.42,0,.58,1) 21.2s,fadeOut2 2s cubic-bezier(.42,0,.58,1) 24s;
+        animation-fill-mode: forwards;
+    }
+    .p3 {
+        animation: fadeIn 2s cubic-bezier(.42,0,.58,1) 21.4s,fadeOut2 2s cubic-bezier(.42,0,.58,1) 24.2s;
+        animation-fill-mode: forwards;
+    }
+    .p4 {
+        animation: fadeIn 2s cubic-bezier(.42,0,.58,1) 21.6s,fadeOut2 2s cubic-bezier(.42,0,.58,1) 24.4s;
+        animation-fill-mode: forwards;
+    }
+    .p5 {
+        animation: fadeIn 2s cubic-bezier(.42,0,.58,1) 21.8s,fadeOut2 2s cubic-bezier(.42,0,.58,1) 24.6s;
+        animation-fill-mode: forwards;
+    }
+    .p6 {
+        animation: fadeIn 2s cubic-bezier(.42,0,.58,1) 22s,fadeOut2 2s cubic-bezier(.42,0,.58,1) 24.8s;
+        animation-fill-mode: forwards;
+    }
+    .p7 {
+        animation: fadeIn 2s cubic-bezier(.42,0,.58,1) 22.2s,fadeOut2 2s cubic-bezier(.42,0,.58,1) 25s;
+        animation-fill-mode: forwards;
+    }
+    .p8 {
+        animation: fadeIn 2s cubic-bezier(.42,0,.58,1) 22.4s,fadeOut2 2s cubic-bezier(.42,0,.58,1) 25.2s;
+        animation-fill-mode: forwards;
+    }
+    .p9 {
+        animation: fadeIn 2s cubic-bezier(.42,0,.58,1) 22.6s,fadeOut2 2s cubic-bezier(.42,0,.58,1) 25.4s;
+        animation-fill-mode: forwards;
+    }
+    .p10 {
+        animation: fadeIn 2s cubic-bezier(.42,0,.58,1) 22.8s,fadeOut2 2s cubic-bezier(.42,0,.58,1) 25.6s;
+        animation-fill-mode: forwards;
+    }
+    .p11 {
+        animation: fadeIn 2s cubic-bezier(.42,0,.58,1) 23s,fadeOut2 2s cubic-bezier(.42,0,.58,1) 25.8s;
+        animation-fill-mode: forwards;
+    }
+    .p12 {
+        animation: fadeIn 2s cubic-bezier(.42,0,.58,1) 23.2s,fadeOut2 2s cubic-bezier(.42,0,.58,1) 26s;
+        animation-fill-mode: forwards;
+    }
+    .p13 {
+        animation: fadeIn 2s cubic-bezier(.42,0,.58,1) 23.4s,fadeOut2 2s cubic-bezier(.42,0,.58,1) 26.2s;
+        animation-fill-mode: forwards;
+    }
+    .particles {
+        position: absolute;
+        display: flex;
+        
+    }
+    .particles2 {
+        position: absolute;
+        display: flex;
+        top: 125px;
+        left: -72px;
+    }
+    .particles3 {
+        position: absolute;
+        display: flex;
+        top: 250px;
+        left: 0px;
+    }
+    .particles4 {
+        position: absolute;
+        display: flex;
+        top: 375px;
+        left: -72px;
+    }
+    .particles5 {
+        position: absolute;
+        display: flex;
+        top: 500px;
+        left: 0px;
+    }
+    .particles6 {
+        position: absolute;
+        display: flex;
+        top: 625px;
+        left: -72px;
+    }
+    .particles7 {
+        position: absolute;
+        display: flex;
+        top: 750px;
+        left: 0px;
+    }
+    .particles8 {
+        position: absolute;
+        display: flex;
+        top: -100px;
+        left: -72px;
+    }
+    .particles9 {
+        position: absolute;
+        display: flex;
+        top: 870px;
+        left: -72px;
+    }
+    .particles10 {
+        position: absolute;
+        display: flex;
+        top: 980px;
+        left: 0px;
+    }
+    
+    
+    .logo {
+        width: 117px;
+        height: 88px;
+        max-width: 117px;
+        max-height: 88px;
+        -webkit-transform: skew(-20deg);
+            -ms-transform: skew(-20deg);
+                transform: skew(-20deg);
+        background: #fff;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        margin-top: 69px;
+        margin-left: -20px;
+        animation: fadeOutLeft 2s cubic-bezier(.42,0,.58,1) 21s;
+        animation-fill-mode: forwards;
+        img.logo_img {
+            margin-top: 15px;
+            width: 32px;
+            height: 46px;
+            -webkit-transform: skew(20deg);
+                -ms-transform: skew(20deg);
+                    transform: skew(20deg);
+        }
+    }
+    .announcement {
+        position: absolute;
+        top: 100px;
+        left: 40%;
+        animation: announcement_animation 8s cubic-bezier(.42,0,.58,1), fadeToTop .5s cubic-bezier(.17,.67,.83,.67) 10s;
+        animation-fill-mode: forwards;
+        span.announcement_text {
+            @include Text($MainTextColor, 100px);
+        }
+    }
+    .inner_wrapper {
+        display: flex;
+        width: 100%;
+        position: relative;
+        flex-wrap: wrap;
+    }
+    .form {
+       position: relative;
+       background-image: url(../img/polygon_big.png);
+       background-size: contain;
+       background-position: center top;
+       width: 420px;
+       height: 480px;
+       text-align: center;
+       img.form_img {
+        margin-top: 17%;
+    }
+    }
+    .pres_item_left {
+       margin-left: 238px;
+       margin-top: 110px;
+       display: block;
+       transform: translate3d(-180%, 0, 0);
+       animation: fadeInLeft 2s cubic-bezier(.42,0,.58,1) 6s, fadeOutLeft 2s cubic-bezier(.42,0,.58,1) 10s, fadeInLeft2 2s cubic-bezier(.42,0,.58,1) 12s, fadeOutLeft 2s cubic-bezier(.42,0,.58,1) 21s;
+       animation-fill-mode: forwards;
+       
+    }
+    .pres_item_right {
+        margin-left: 76px;
+        margin-top: 10%;
+        transform: translate3d(140%, 0, 0);
+        animation: fadeInRight 2s cubic-bezier(.42,0,.58,1) 6s, fadeOutRight 2s cubic-bezier(.42,0,.58,1) 10s;
+        animation-fill-mode: forwards;
+        span.pres_item_right_text {
+            @include Text($MainTextColor, 130px);
+            letter-spacing: 0;
+            span{
+                font-size: 100px;
+            }
+        }
+        
+    }
+    .item_2 {
+        transform: translate3d(500%, 0, 0);
+        animation: fadeInRight2 2s cubic-bezier(.42,0,.58,1) 12s, fadeOutRight2 2s cubic-bezier(.42,0,.58,1) 21s;
+        animation-fill-mode: forwards;
+        margin-top: -25.5%;
+    }
+    .count {
+        width: 573px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        left: 40%;
+        top: -100%;
+        z-index: 3;
+        animation: fadeInTop 2s cubic-bezier(.42,0,.58,1) 12s, fadeOutTop 2s cubic-bezier(.42,0,.58,1) 21s;
+        animation-fill-mode: forwards;
+        .count_top {
+            display: flex;
+            width: 50%;
+            margin-left: -50px;
+            .count_top_dot {
+                height: 26px;
+                width: 26px;
+                border-radius: 50%;
+                background-color: $MainTextColor;
+                margin-top: 25px;
+                margin-right: 15px;
+            }
+            span.count_top_player {
+                @include Text($MainTextColor, 70px);
+            }
+        }
+        .count_main {
+            display: flex;
+            width: 100%;
+            span.count_main_num {
+                @include Text($MainTextColor, 250px);
+                -webkit-text-fill-color: white;
+                -webkit-text-stroke-width: 2px;
+                -webkit-text-stroke-color: black;
+            }
+        }
+    }
+    .goals {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        position: absolute;
+        z-index: 4;
+        bottom: -100%;
+        animation: fadeInBottom 2s cubic-bezier(.42,0,.58,1) 12s, fadeOut 2s cubic-bezier(.42,0,.58,1) 16s;
+        animation-fill-mode: forwards;
+        .goals_left {
+            text-align: right;
+        }
+        .goals_right {
+            text-align: left;
+            margin-left: 100px;
+        }
+        .goals_side {
+            width: 49%;
+            span.goals_left_player {
+                @include Text($MainTextColor, 60px);
+            }
+        }
+    }
+    .coefs {
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 1011px;
+        left: 22%;
+        bottom: -42%;
+        z-index: 5;
+        animation: fadeOutBottom 2s cubic-bezier(.42,0,.58,1) 21s;
+        animation-fill-mode: forwards;
+        .coefs_item {
+            position: relative;
+            background-image: url(../img/polygon_white.png);
+            background-size: contain;
+            width: 290px;
+            height: 336px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            opacity: 0;
+            animation: rollIn 2s cubic-bezier(.42,0,.58,1) 18s;
+            animation-fill-mode: forwards;
+            .coefs_item_top {
+                margin-top: 58px;
+                span.coefs_item_top_text {
+                    @include Text($MainBG, 36px);
+                }
+            }
+            .coefs_item_bot {
+                margin-top: 25px;
+                span.coefs_item_bot_text {
+                    @include Text($MainBG, 84px);
+                }
+            }
+        }
+    }
+}

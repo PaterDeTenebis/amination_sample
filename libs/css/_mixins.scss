@@ -1,0 +1,5 @@
+@mixin Text ($color, $fz) {
+    font-size: $fz;
+    color: $color!important;
+    text-transform: uppercase;
+}
