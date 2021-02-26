@@ -456,12 +456,15 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Tipico', sans-serif;
+  height: 1080px;
+  width: 1920px;
+  overflow: hidden;
 }
 
 main.wrapper {
   z-index: 1;
-  height: 100vh;
-  width: 100vw;
+  height: 1080px;
+  width: 1920px;
   background-color: #C8102E;
   position: relative;
   overflow: hidden;
